@@ -42,20 +42,21 @@ footer .attribution a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  -webkit-box-shadow: 0 5px 0 rgba(62, 60, 73, 0.4);
+          box-shadow: 0 5px 0 rgba(62, 60, 73, 0.4);
 }
 
 .form input {
   width: 100%;
   outline: none;
   padding: 2rem 3rem;
-  margin-bottom: 1.5rem;
   border-radius: 5px;
-  border: 0.5px solid #b9b6d3;
+  border: 1px solid #b9b6d3;
   font-weight: 700;
 }
 
 .form input:focus, .form input:active {
-  border: 0.5px solid #3e3c49;
+  border: 1px solid #3e3c49;
   font-weight: 700;
 }
 
@@ -75,16 +76,72 @@ footer .attribution a {
   text-transform: uppercase;
 }
 
-.form small {
+.form .terms {
   font-size: 1rem;
   font-weight: 500;
   color: rgba(62, 60, 73, 0.5);
 }
 
-.form small a {
+.form .terms a {
   text-decoration: none;
   color: #ff7a7a;
   font-weight: 700;
+}
+
+.form .inputs {
+  position: relative;
+  width: 100%;
+}
+
+.form i {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  color: #ff7a7a;
+  font-size: 2rem;
+  visibility: hidden;
+}
+
+.form .error-message {
+  display: block;
+  width: 100%;
+  color: #ff7a7a;
+  text-align: right;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+.form .email-error {
+  color: #ff7a7a;
+  font-size: 1.4rem;
+  font-weight: 500;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  visibility: hidden;
+}
+
+.form.success input {
+  border: 2px solid #38cc8c;
+}
+
+.form.error input {
+  border: 2px solid #ff7a7a;
+}
+
+.form.error .error-message {
+  visibility: visible;
+}
+
+.form.error i {
+  visibility: visible;
+}
+
+.form.error .email-error {
+  visibility: visible;
 }
 
 main {
@@ -123,7 +180,7 @@ main .header {
 main .header__heading {
   color: white;
   font-size: 5rem;
-  line-height: 5rem;
+  line-height: 5.5rem;
   margin-bottom: 3rem;
 }
 

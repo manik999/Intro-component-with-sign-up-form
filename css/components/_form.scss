@@ -6,19 +6,20 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  box-shadow: 0 5px 0 rgba($color-blue-dark, 0.4);
 
   input {
     width: 100%;
     outline: none;
     padding: 2rem 3rem;
-    margin-bottom: 1.5rem;
     border-radius: 5px;
-    border: 0.5px solid $color-blue-grayish;
+    border: 1px solid $color-blue-grayish;
     font-weight: 700;
+    // position: relative;
 
     &:focus,
     &:active {
-      border: 0.5px solid $color-blue-dark;
+      border: 1px solid $color-blue-dark;
       font-weight: 700;
     }
   }
@@ -38,7 +39,7 @@
     text-transform: uppercase;
   }
 
-  small {
+  .terms {
     font-size: 1rem;
     font-weight: 500;
     color: rgba($color-blue-dark, 0.5);
@@ -47,5 +48,62 @@
       color: $color-red;
       font-weight: 700;
     }
+  }
+
+  .inputs {
+    position: relative;
+    width: 100%;
+  }
+
+  i {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    transform: translate(-50%, -10%);
+    color: $color-red;
+    font-size: 2rem;
+    visibility: hidden;
+  }
+
+  .error-message {
+    display: block;
+    width: 100%;
+    color: $color-red;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    visibility: hidden;
+  }
+
+  .email-error {
+    color: $color-red;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    visibility: hidden;
+  }
+}
+
+.form.success {
+  input {
+    border: 2px solid $color-green;
+  }
+}
+
+.form.error {
+  input {
+    border: 2px solid $color-red;
+  }
+  .error-message {
+    visibility: visible;
+  }
+  i {
+    visibility: visible;
+  }
+  .email-error {
+    visibility: visible;
   }
 }

@@ -74,6 +74,7 @@ footer .attribution a {
   font-weight: 500;
   font-size: 1.4rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .form .terms {
@@ -88,7 +89,7 @@ footer .attribution a {
   font-weight: 700;
 }
 
-.form .inputs {
+.form .form-control {
   position: relative;
   width: 100%;
 }
@@ -124,23 +125,23 @@ footer .attribution a {
   visibility: hidden;
 }
 
-.form.success input {
+.form-control.success input {
   border: 2px solid #38cc8c;
 }
 
-.form.error input {
+.form-control.error input {
   border: 2px solid #ff7a7a;
 }
 
-.form.error .error-message {
+.form-control.error .error-message {
   visibility: visible;
 }
 
-.form.error i {
+.form-control.error i {
   visibility: visible;
 }
 
-.form.error .email-error {
+.form-control.error .email-error {
   visibility: visible;
 }
 

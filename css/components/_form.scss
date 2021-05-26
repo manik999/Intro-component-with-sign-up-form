@@ -37,6 +37,7 @@
     font-weight: 500;
     font-size: 1.4rem;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .terms {
@@ -50,7 +51,7 @@
     }
   }
 
-  .inputs {
+  .form-control {
     position: relative;
     width: 100%;
   }
@@ -87,13 +88,13 @@
   }
 }
 
-.form.success {
+.form-control.success {
   input {
     border: 2px solid $color-green;
   }
 }
 
-.form.error {
+.form-control.error {
   input {
     border: 2px solid $color-red;
   }

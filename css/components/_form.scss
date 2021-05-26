@@ -1,0 +1,51 @@
+.form {
+  background-color: $color-white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+  input {
+    width: 100%;
+    outline: none;
+    padding: 2rem 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 0.5px solid $color-blue-grayish;
+    font-weight: 700;
+
+    &:focus,
+    &:active {
+      border: 0.5px solid $color-blue-dark;
+      font-weight: 700;
+    }
+  }
+
+  button {
+    width: 100%;
+    color: $color-white;
+    background-color: $color-green;
+    border: 0;
+    outline: none;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgba($color-blue-dark, 0.4);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  small {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba($color-blue-dark, 0.5);
+    a {
+      text-decoration: none;
+      color: $color-red;
+      font-weight: 700;
+    }
+  }
+}

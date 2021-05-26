@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .attribution {
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+
+.form {
+  background-color: white;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.form input {
+  width: 100%;
+  outline: none;
+  padding: 2rem 3rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border: 0.5px solid #b9b6d3;
+  font-weight: 700;
+}
+
+.form input:focus, .form input:active {
+  border: 0.5px solid #3e3c49;
+  font-weight: 700;
+}
+
+.form button {
+  width: 100%;
+  color: white;
+  background-color: #38cc8c;
+  border: 0;
+  outline: none;
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 0 rgba(62, 60, 73, 0.4);
+          box-shadow: 0 3px 0 rgba(62, 60, 73, 0.4);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.form small {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(62, 60, 73, 0.5);
+}
+
+.form small a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #ff7a7a;
+  background-image: url(bg-intro-desktop.png);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 0 15rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 5rem 1rem;
+  }
+}
+
+main .header {
+  width: 95%;
+}
+
+@media (max-width: 900px) {
+  main .header {
+    margin-bottom: 5rem;
+  }
+}
+
+main .header__heading {
+  color: white;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+
+main .header__para {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+main .form-container {
+  display: block;
+  width: 50rem;
+}
+
+@media (max-width: 900px) {
+  main .form-container {
+    width: 30rem;
+  }
+}
+
+main .form-container .alert {
+  background-color: #6055a5;
+  font-size: 1.4rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 7px 0 rgba(62, 60, 73, 0.4);
+          box-shadow: 0 7px 0 rgba(62, 60, 73, 0.4);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+main .form-container .alert strong {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
